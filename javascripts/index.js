@@ -8,8 +8,14 @@ $(function() {
 		'navigationColor':'red',
 		'navigationPosition': 'right',
 		'navigationTooltips': ['home', 'project & works', 'skill', 'education'],
-		'afterRender':function(){
+		afterRender:function(){
 			
+			
+		},
+		afterLoad:function(anchorLink,index){
+			if(index==2){
+				
+			}
 			
 		}
 	});

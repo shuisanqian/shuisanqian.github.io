@@ -82,7 +82,17 @@ ol,
 ul {
 	list-style: none;
 }
-
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+a:visited,a:active,a:focus{
+	color: inherit;
+}
+a:hover{
+	color: #22C3AA;
+}
 table {
 	border-collapse: separate;
 	border-spacing: 0;
@@ -123,7 +133,9 @@ q {
 	display: none;
 }
 
-.clear {
+.clear{
+	content: '';
+	height: 0px;
 	clear: both;
 	height: 0;
 	overflow: hidden;
