@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>个人简历</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="format-detection" content="email=no"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的简历</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+		<script src="javascripts/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="javascripts/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="javascripts/index.js" type="text/javascript" charset="utf-8"></script>
 		<link rel="icon" href="images/per.ico">
-  </head>
-  <body>
-  		<div class="impress-not-supported">
-  			<div class="fallback-message">
-	        <p>你的浏览器不支持该简历预览，为了更好的体验请使用Chrome、Firefox、Safari浏览器</p>
-	    	</div>
-  		</div>
-  		
-  		<div id="impress">
-  				<div class="step" data-x="-1000" data-y="-1500">
-  					测试第一幕
-  				</div>
-  				<div class="step" data-x="0" data-y="-1500">
-			      	  测试第二幕
-			    </div>
-			   <div class="step" data-x="0" data-y="600" data-scale="5">
-			      	  测试第三幕
-			   </div>
-  			 <div class="step" data-x="0" data-y="5600" data-scale="7" data-rotate="90">
-			      	测试第四幕
-			   </div>
-			   <div class="step" data-x="6000" data-y="4100" data-scale="7" data-rotate="180">
-			      	
-			   </div>
-			   <div class="step" data-x="5400" data-y="3800" data-scale="1" data-z="-3000"  data-rotate="300">
-			      	
-			   </div>
-  		</div>
-  	
-  	
-  	
-    
-    
-    <script src="javascripts/impress.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript">impress().init();</script>
-  </body>
+	</head>
+	<body>
+		<div id="dowebok">
+			<div class="section section1">
+				<div class="cc-container">
+					<img src="images/myImg.png" class="my-img"/>
+					<ul>
+						<li class="my-name">朱志鹏</li>
+						<li class="my-position">web前端工程师</li>
+						<li>年龄：21岁</li>
+						<li>籍贯：江西省宜春市</li>
+						<li>电话：13767011474</li>
+						<li>邮箱：shuisanqian_11@163.com</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section active section2">
+				<div class="other-contatiner">
+					<h1 class="titles">项目经验</h1>
+					<div class="project-item">
+						<div class="item1"></div>
+						<div class="item2">123</div>
+						<div>123</div>
+						<div>123</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section3">
+				<h3>第三屏</h3>
+				<p>滚动到第三屏后的回调函数执行的效果</p>
+			</div>
+			<div class="section section4">
+				<h3>第四屏</h3>
+				<p>滚动到第四屏后的回调函数执行的效果</p>
+			</div>
+		</div>
+
+	</body>
+
 </html>
