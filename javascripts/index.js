@@ -18,7 +18,7 @@ $(function() {
 				$('.h300').animate({'width':'35%'},2000);
 				$('.h280').animate({'width':'5%'},2000);
 			}else if(index==4){
-				$('.Internship').addClass('internAnim')
+				$('.Internship').addClass('internAnim');
 			}
 		}
 	});
