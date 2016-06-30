@@ -7,11 +7,7 @@ $(function() {
 		'navigation': true,
 		'navigationColor':'red',
 		'navigationPosition': 'right',
-		'navigationTooltips': ['home', 'project & works', 'skill', 'education'],
-		afterRender:function(){
-			
-			
-		},
+		'navigationTooltips': ['home', 'project & works', 'Professions', 'Internship','thanks'],
 		afterLoad:function(anchorLink,index){
 			if(index==3){
 				$('.Professions').find('div').find('span').fadeIn("slow");
@@ -21,8 +17,9 @@ $(function() {
 				$('.h420').animate({'width':'65%'},2000);
 				$('.h300').animate({'width':'35%'},2000);
 				$('.h280').animate({'width':'5%'},2000);
+			}else if(index==4){
+				$('.Internship').addClass('internAnim')
 			}
-			
 		}
 	});
 	
@@ -62,6 +59,7 @@ $(function() {
 				break;				
 			default:
 				inhtml += "";
+				return;
 				break;
 		}
 		tips.append(list.append(inhtml))
@@ -69,7 +67,6 @@ $(function() {
 	}).mouseleave(function(){
 		$('.tips').stop(false, true).hide();
 		$('.tips').find('ol').remove();
-		
 	})
 
 

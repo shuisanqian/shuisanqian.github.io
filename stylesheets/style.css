@@ -99,7 +99,7 @@ body{
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-ms-transition:  all 0.5s ease-in-out;
-	height: 300px;
+	min-height: 300px;
 }
 .project-item>div:hover{
 	transform: scale(1.1,1.1);
@@ -224,9 +224,108 @@ body{
 	text-indent: 1em;
 }
 
+.Internship{
+    width: 1024px;
+    margin: 0 auto;
+    opacity: 0;
+}
+.internAnim{
+	animation: flix 1s ease-in-out;
+	animation-fill-mode: forwards;
+}
+@keyframes flix{
+	0%{
+		transform: rotateX(-90deg);
+		opacity: 0;
+	}
+	100%{
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+}
 
-
-
+.Internship-list{
+	margin: 30px 0px 0px 0px;
+	position: relative;
+	z-index: 9999;
+}
+.Internship-list li{
+	margin-bottom:80px;
+}
+.Internship-list:before{
+	content: '';
+	position: absolute;
+	top: -15px;
+	bottom: 0;
+	width: 10px;
+	left: 50%;
+	background: #afdcf8;
+	margin-left: -10px;
+	height: 100%;
+}
+.time-now{
+	position: relative;
+}
+.time-clir{
+	position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #46a4da;
+    border: 8px solid #afdcf8;
+    left: 480px;
+}
+.Internship-content{
+	width: 42%;
+	padding: 1em;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	position: relative;
+}
+.Internship-content>h2{
+	font-size: 22px;
+}
+.Internship-content>p{
+	margin-top: 15px;
+    line-height: 22px;
+    font-size: 14px;
+    color: dimgrey;
+}
+.Internship-content:before{
+	content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    transform: rotate(130deg);
+    right: -5px;
+    top: 10px;
+}
+.contents{
+	float: right;
+}
+.contents:before{
+	left: -5px;
+}
+.time-z{
+	position: absolute;
+	left: 54%;
+    top: 15px;
+    color:#eef3f0;
+}
+.lefts{
+	left: 31%;
+}
+.time-past{
+	position: relative;
+	overflow: hidden;
+}
+.thanks{
+	text-align: center;
+	color: #eef3f0;
+	font-size: 18px;
+}
 
 
 
@@ -241,7 +340,8 @@ body{
 		float:inherit;
 		margin:0px auto 20px auto;
 		position: relative;
-		height: inherit;
+		height: auto;
+		min-height: inherit;
 	}
 	.imgs{
 		display: none;
